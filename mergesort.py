@@ -16,7 +16,7 @@ def mergesort(arr):
 	left  = arr[:midPt]
 	right = arr[midPt:]
 
-	# call the merge function tom sort the elements of each
+	# call the merge function to sort the elements of each
 	# half and merge them back into a -- newly sorted -- array
 	return merge( mergesort(left), mergesort(right) ) 
 
@@ -25,7 +25,7 @@ def merge(left, right):
 	# create a bucket to hold the sorted elements of left and right
 	res = []
 
-	# i and j are going to be point at the index of the left 
+	# i and j are going to point at the index of the left 
 	# and right arrays as we iterate over the elements, sort
 	# them and put them back into res
 	i = 0
